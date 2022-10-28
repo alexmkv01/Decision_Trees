@@ -1,2 +1,2 @@
-# IML-Coursework
-Repository for the coursework part of the Introduction to Machine Learning Module, at University
+# Decision Trees
+Repository containing code that implements a decision tree entirely from scratch.
