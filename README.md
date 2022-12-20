@@ -1,4 +1,4 @@
-# Implementing Decision Trees Algorithm from Scratch
+# Implementing Decision Trees from Scratch
 
 Welcome to the Introduction to Machine Learning module coursework repository!
 
