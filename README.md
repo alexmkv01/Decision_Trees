@@ -24,7 +24,7 @@ Decision Tree Learning
 To create the decision tree, we have implemented a recursive method **`decision_tree_learning()`** inside the **`DecisionTree`** class, which takes as arguments a matrix containing the dataset and a depth variable (used to compute the maximal depth of the tree).  The function **`FIND_SPLIT()`** is used to choose the attribute and value that result in the highest information gain.
 
 ## Evaluation ##
-We have implemented an evaluation function, **`evaluate()`**, which takes a trained tree and a test dataset and returns the accuracy of the tree. We have also performed 10-fold cross validation on both the clean and noisy datasets and reported the following classification metrics for both datasets:
+We have implemented an evaluation method **`evaluate()`**  inside the **`DecisionTree`** class, which takes a trained tree and a test dataset and returns the accuracy of the tree. We have also performed 10-fold cross validation on both the clean and noisy datasets and reported the following classification metrics for both datasets:
 
   - Confusion matrix
   - Accuracy
@@ -32,7 +32,7 @@ We have implemented an evaluation function, **`evaluate()`**, which takes a trai
   - F1-measures derived from the recall and precision rates
 
 ## Pruning and Evaluation ## 
-To reduce the performance difference between the clean and noisy datasets, we have implemented a pruning function based on reducing the validation error. The pruned decision tree is then re-evaluated using the same metrics as before.
+To reduce the performance difference between the clean and noisy datasets, we have implemented a pruning function **`prune()`**  inside the **`DecisionTree`** class, based on reducing the validation error. The pruned decision tree is then re-evaluated using the same metrics as before.
 
 ## Running the Code ## 
 To run the code, simply open the Jupyter notebook file and run the cells in order. Make sure that the datasets are in the same local directory as the notebook file.
